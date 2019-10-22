@@ -8,7 +8,7 @@ before_install:
 script:
   - docker run -e CI-true kapas2004/react-test npm test
 
-afer_success:
+after_success:
   - docker build -t kapas2004/multi-client ./client
   - docker build -t kapas2004/multi-nginx ./nginx
   - docker build -t kapas2004/multi-server ./server
