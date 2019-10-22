@@ -13,10 +13,12 @@ after_success:
   - docker build -t kapas2004/multi-nginx ./nginx
   - docker build -t kapas2004/multi-server ./server
   - docker build -t kapas2004/multi-worker ./worker
-  # Login to the docker cli 
+  # Login to the docker cli
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # Take those images and push them to docker hub
   - docker push kapas2004/multi-client
   - docker push kapas2004/multi-nginx
   - docker push kapas2004/multi-server
   - docker push kapas2004/multi-worker
+
+  #kimo
