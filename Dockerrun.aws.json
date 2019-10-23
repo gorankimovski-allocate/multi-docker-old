@@ -10,21 +10,21 @@
         },
         {
             "name": "server",
-            "image": "kapas2004/mulit-server",
+            "image": "kapas2004/multi-server",
             "hostname": "api",
             "essential": false,
             "memory": 128
         },
         {
             "name": "worker",
-            "image": "kapas2004/mulit-worker",
+            "image": "kapas2004/multi-worker",
             "hostname": "worker",
             "essential": false,
             "memory": 128
         },
         {
             "name": "nginx",
-            "image": "kapas2004/mulit-nginx",
+            "image": "kapas2004/multi-nginx",
             "hostname": "nginx",
             "essential": true,
             "portMappings": [
